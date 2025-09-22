@@ -1,0 +1,24 @@
+{
+  "home": {
+    "title": "Bienvenue sur la page d'accueil 👌",
+    "description": "Ceci est la page d'accueil"
+  },
+
+  "clientPage": {
+    "title": "Page Client 💻👤",
+    "description": "Ceci est un composant client avec un compteur ➡️ {count}",
+    "clickMe": "Clique moi !"
+  },
+
+  "serverPage": {
+    "title": "Page Serveur 🖥️🗄️🖥️",
+    "description": "Ceci est un composant serveur avec du contenu statique.",
+    "name": "Nom d'utilisateur : {name}"
+  },
+
+  "links": {
+    "home": "Accueil",
+    "clientPage": "Page Client",
+    "serverPage": "Page Serveur"
+  }
+}

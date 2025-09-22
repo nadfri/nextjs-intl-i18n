@@ -1,10 +1,13 @@
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/navigation';
 
 export function Header() {
+  const t = useTranslations('links');
+
   const links = [
-    { label: 'Home', href: '/' },
-    { label: 'Server Page', href: '/server-page' },
-    { label: 'Client Page', href: '/client-page' },
+    { label: t('home'), href: '/' },
+    { label: t('serverPage'), href: 'server-page' },
+    { label: t('clientPage'), href: 'client-page' },
   ];
 
   return (

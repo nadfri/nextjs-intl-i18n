@@ -1,0 +1,24 @@
+{
+  "home": {
+    "title": "Welcome to the Home Page 👌",
+    "description": "This is the home page"
+  },
+
+  "clientPage": {
+    "title": "Client Page 💻👤",
+    "description": "This is a client component with a counter ➡️ {count}",
+    "clickMe": "Click me!"
+  },
+
+  "serverPage": {
+    "title": "Server Page 🖥️🗄️🖥️",
+    "description": "This is a server component with static content",
+    "name": "User name: {name}"
+  },
+
+  "links": {
+    "home": "Home",
+    "clientPage": "Client Page",
+    "serverPage": "Server Page"
+  }
+}
