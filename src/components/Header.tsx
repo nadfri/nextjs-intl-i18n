@@ -1,5 +1,6 @@
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
+import { ToggleLocalSuspense } from './ToggleLocale';
 
 export function Header() {
   const t = useTranslations('links');
@@ -21,6 +22,8 @@ export function Header() {
           ))}
         </ul>
       </nav>
+
+      <ToggleLocalSuspense />
     </header>
   );
 }

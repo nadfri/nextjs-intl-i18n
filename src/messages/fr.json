@@ -1,24 +1,30 @@
 {
   "home": {
     "title": "Bienvenue sur la page d'accueil 👌",
-    "description": "Ceci est la page d'accueil"
+    "description": "Cette page est une page de serveur sans asynchronisation"
   },
-
   "clientPage": {
     "title": "Page Client 💻👤",
     "description": "Ceci est un composant client avec un compteur ➡️ {count}",
     "clickMe": "Clique moi !"
   },
-
   "serverPage": {
     "title": "Page Serveur 🖥️🗄️🖥️",
-    "description": "Ceci est un composant serveur avec du contenu statique.",
+    "description": "Ceci est un composant de serveur avec asynchronisation et récupération des données",
     "name": "Nom d'utilisateur : {name}"
   },
-
   "links": {
     "home": "Accueil",
     "clientPage": "Page Client",
     "serverPage": "Page Serveur"
+  },
+  "layout": {
+    "title": "App Next.js internationalisée",
+    "description": "Généré par create next app"
+  },
+  "notFound": {
+    "title": "Page introuvable",
+    "description": "La page que vous recherchez n'existe pas.",
+    "goHome": "Rentrer chez vous ➡️"
   }
 }

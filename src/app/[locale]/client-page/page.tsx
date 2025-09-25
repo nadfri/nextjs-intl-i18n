@@ -1,27 +1,20 @@
 'use client';
-import { useTranslations, useFormatter } from 'next-intl';
+import { useTranslations } from 'next-intl';
 import { useState } from 'react';
 
 export default function ClientPage() {
   const [count, setCount] = useState(0);
+  const increment = () => setCount((current) => current + 1);
+  
   const t = useTranslations('clientPage');
-  const format = useFormatter();
-
-  const time = format.dateTime(new Date(), {
-    hour: 'numeric',
-    minute: 'numeric',
-    second: 'numeric',
-  });
 
   return (
     <>
-      <h1>{t('title', { time })}</h1>
+      <h1>{t('title')}</h1>
 
-      <h2>{time}</h2>
+      <h2>{t('description', { count })}</h2>
 
-      <p>{t('description', { count })}</p>
-
-      <button onClick={() => setCount(count + 1)}>Click me</button>
+      <button onClick={increment}>{t('clickMe')}</button>
     </>
   );
 }
