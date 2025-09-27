@@ -17,7 +17,9 @@ The project supports 3 languages:
 
 ## 🖼️ Preview
 
-<img src="public/screenshot.png" alt="App preview with next-intl locales and header toggle" width="900" />
+<div align="center">
+<img src="public/screenshot.png" style="text-align:center;" alt="App preview with next-intl locales and header toggle" width="400" height="500"/>
+</div>
 
 ## 🚀 Quick Start
 
@@ -35,7 +37,22 @@ git clone https://github.com/nadfri/nextjs-intl-i18n.git
 cd nextjs-intl-i18n
 ```
 
-2. **Install dependencies**
+2. (Tutorial path) Switch to the base branch and install next-intl
+
+If you're following the YouTube tutorial from the starter project, checkout the base branch and install the package:
+
+```bash
+git checkout without-next-intl
+pnpm install
+pnpm add next-intl
+# or with npm
+npm install
+npm install next-intl
+```
+
+If you only want to run the final project, stay on `main` and continue below.
+
+3. **Install dependencies**
 
 ```bash
 pnpm install
@@ -43,7 +60,7 @@ pnpm install
 npm install
 ```
 
-3. **Start the development server**
+4. **Start the development server**
 
 ```bash
 pnpm dev
@@ -51,7 +68,7 @@ pnpm dev
 npm run dev
 ```
 
-4. **Open the application**
+5. **Open the application**
    - Open [http://localhost:3000](http://localhost:3000)
    - The application will automatically detect your browser's language
    - You can also access directly:
