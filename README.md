@@ -122,20 +122,7 @@ const withNextIntl = createNextIntlPlugin();
 export default withNextIntl({});
 ```
 
-### 2. Middleware (`src/middleware.ts`)
-
-```typescript
-import createMiddleware from 'next-intl/middleware';
-import { routing } from './i18n/routing';
-
-export default createMiddleware(routing);
-
-export const config = {
-  matcher: '/((?!api|trpc|_next|_vercel|.*\\..*).*)',
-};
-```
-
-### 3. Routes Configuration (`src/i18n/routing.ts`)
+### 2. Routes Configuration (`src/i18n/routing.ts`)
 
 ```typescript
 import { defineRouting } from 'next-intl/routing';
@@ -147,7 +134,7 @@ export const routing = defineRouting({
 });
 ```
 
-### 4. Request Configuration (`src/i18n/request.ts`)
+### 3. Request Configuration (`src/i18n/request.ts`)
 
 ```typescript
 import { getRequestConfig } from 'next-intl/server';
@@ -167,7 +154,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
 });
 ```
 
-### 5. Typed Navigation (`src/i18n/navigation.ts`)
+### 4. Wrapper Navigation (`src/i18n/navigation.ts`)
 
 Expose typed navigation helpers scoped to your routing config. This ensures locale-aware links and router operations:
 
@@ -183,6 +170,19 @@ Usage:
 
 - Use `Link` instead of `next/link` to automatically prefix locales and get key-safety.
 - Use `useRouter` and `redirect` from here to remain locale-aware.
+
+### 5. Middleware (`src/middleware.ts`)
+
+```typescript
+import createMiddleware from 'next-intl/middleware';
+import { routing } from './i18n/routing';
+
+export default createMiddleware(routing);
+
+export const config = {
+  matcher: '/((?!api|trpc|_next|_vercel|.*\\..*).*)',
+};
+```
 
 ### 6. Global Type-Safety (`global.ts`)
 
