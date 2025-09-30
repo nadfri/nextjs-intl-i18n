@@ -1,12 +1,7 @@
-import { useTranslations, useLocale } from 'next-intl';
-import { setRequestLocale } from 'next-intl/server';
+import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 
 export default function NotFound() {
-  const locale = useLocale();
-
-  setRequestLocale(locale);
-
   const t = useTranslations('notFound');
 
   return (
