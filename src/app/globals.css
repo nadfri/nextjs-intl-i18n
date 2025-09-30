@@ -38,9 +38,16 @@ a:hover {
 
 header,
 footer {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   padding: 1.5rem;
   background-color: #515151;
+}
+
+nav {
+  flex: 1;
 }
 
 ul {
@@ -49,9 +56,4 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-h1 {
-  margin-block: 2rem;
-  text-align: center;
 }
