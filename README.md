@@ -2,6 +2,10 @@
 
 This project is a complete example of internationalization implementation with **next-intl** in **Next.js 15**. It's part of a YouTube tutorial explaining how to configure and use next-intl to create multilingual applications.
 
+## 🎥 Video Tutorial
+
+Watch the complete tutorial on YouTube: [Next.js 15 + next-intl Internationalization Tutorial](https://www.youtube.com/watch?v=qI6WKlgiuj8)
+
 ## 📋 Project Overview
 
 This repository contains two main branches:
